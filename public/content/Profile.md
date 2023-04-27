@@ -1,10 +1,10 @@
 ## Site Name
-- Portable Portfolio
+- Ana Tran's Portfolio
 
 ## Header
-- Hi, my name is Eldora. 
-- I'm a software engineer.
-- Short Description Here.
+- Hi, my name is Ana Tran. 
+- I'm a software developer.
+- I am looking for new graduate opportunities for 2023.
 
 ## About
 Write your "About" section here.
