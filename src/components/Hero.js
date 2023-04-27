@@ -67,6 +67,7 @@ export default function Header({ color }) {
                   width={250}
                   height={80}
                   style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}
+                  onClick={downloadResume}
                 />
               </Box>
                 <Button
