@@ -65,7 +65,7 @@ export default function Header({ color }) {
               <Box mr={1}>
                 <img
                   src="kanahei.png"
-                  alt="usagi lyingdown"
+                  alt="usagi lying down"
                   width={250}
                   height={80}
                 />
