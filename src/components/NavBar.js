@@ -70,6 +70,7 @@ export default function Nav({ color }) {
     const letter = profile.logo[i];
     const component = TbIcons[`TbLetter${letter}`];
     TbLetterComponents.push(component);
+
   }
 
   return (

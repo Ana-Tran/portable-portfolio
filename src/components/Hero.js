@@ -39,7 +39,7 @@ export default function Header({ color }) {
         >
           <div
             align={"center"}
-            alignSelf={"center"}
+            alignself={"center"}
             position={"relative"}>
             <img
               src="logo.png"
