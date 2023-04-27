@@ -18,11 +18,7 @@ export default function Header({ color }) {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
   return (
     <>
@@ -36,11 +32,20 @@ export default function Header({ color }) {
       <Container maxW={"3xl"} id="hero">
         <Stack
           as={Box}
-          textAlign={"right"}
+          textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
           pt={{ base: 36, md: 52 }}
         >
+          <div
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}>
+            <img
+              src="logo.png"
+              alt="pompompurin logo"
+            ></img>
+          </div>
           <Heading
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
