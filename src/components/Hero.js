@@ -36,7 +36,7 @@ export default function Header({ color }) {
       <Container maxW={"3xl"} id="hero">
         <Stack
           as={Box}
-          textAlign={"center"}
+          textAlign={"right"}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
           pt={{ base: 36, md: 52 }}

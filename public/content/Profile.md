@@ -11,9 +11,9 @@ Write your "About" section here.
 
 ## Contact
 Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ana-tran1/
+- GitHub: https://github.com/Ana-Tran
+- Email: anatran334@gmail.com
 
 ## Logo
-- EB
+- AT
