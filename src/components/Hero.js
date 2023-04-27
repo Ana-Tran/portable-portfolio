@@ -8,7 +8,6 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-  Flex,
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 import resume from "../resources/Ana_Tran_Resume.pdf";
@@ -61,24 +60,23 @@ export default function Header({ color }) {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Flex align={"center"} justify={"space-between"}>
-              <Box mr={1}>
+              <Box mr={2}>
                 <img
                   src="kanahei.png"
                   alt="usagi lying down"
                   width={250}
                   height={80}
+                  style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}
                 />
               </Box>
-              <Flex align={"center"} justify={"space-between"}>
                 <Button
                   colorScheme={color}
                   bg={`${color}.400`}
                   rounded={"full"}
                   px={16}
                   py={30}
-                  top={75}
-                  right={230}
+                  top={120}
+                  style={{ position: "relative", zIndex: -1 }}
                   _hover={{
                     bg: `${color}.500`,
                   }}
@@ -86,8 +84,6 @@ export default function Header({ color }) {
                 >
                   View Resume
                 </Button>
-              </Flex>
-            </Flex>
           </Stack>
         </Stack>
       </Container>
