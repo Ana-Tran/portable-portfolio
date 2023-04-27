@@ -61,23 +61,24 @@ export default function Header({ color }) {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Flex align={"left"} justify={"space-between"}>
-              <Box mr={3}>
+            <Flex align={"center"} justify={"space-between"}>
+              <Box mr={1}>
                 <img
-                  src="purin-looking.png"
-                  alt="pompompurin side profile"
+                  src="kanahei.png"
+                  alt="usagi lyingdown"
                   width={250}
                   height={80}
                 />
               </Box>
-              <Flex align={"right"} justify={"space-between"}>
+              <Flex align={"center"} justify={"space-between"}>
                 <Button
                   colorScheme={color}
                   bg={`${color}.400`}
                   rounded={"full"}
                   px={16}
                   py={30}
-                  top={150}
+                  top={75}
+                  right={230}
                   _hover={{
                     bg: `${color}.500`,
                   }}
