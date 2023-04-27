@@ -28,9 +28,20 @@ export default function About({ color }) {
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+            <Text color={"white.600"} fontSize={"xl"} px={4}>
               {profile.about}
             </Text>
+            <div
+            align={"right"}
+            alignself={"right"}
+            position={"relative"}>
+            <img
+              src="purin.png"
+              alt="pompompurin smiling"
+              width={250}
+              height={80}
+            ></img>
+          </div>
           </Stack>
         </Container>
       </>
