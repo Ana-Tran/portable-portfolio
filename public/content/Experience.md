@@ -8,7 +8,7 @@
 - List Items:
   - Manage Help Desk tickets in a timely manner
   - Run diagnostics to resolve customer reported issues
-  - Install, make changes and repair computer hardware and software
+  - Install, make changes, and repair computer hardware and software
 
 ## Royal Bank of Canada
 - IAM Systems Cyber Security Analyst | Jan 2022 - Apr 2022
