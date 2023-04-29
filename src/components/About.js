@@ -1,50 +1,41 @@
-import {
-  Divider,
-  Stack,
-  Text,
-  Container,
-  Box,
-  HStack,
-} from "@chakra-ui/react";
+import { Divider, Stack, Text, Container, Box, HStack } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
+import Marquee from "react-fast-marquee";
 
 export default function About({ color }) {
   const profile = ProfileArray();
-    return (
-      <>
-        <Container maxW={"3xl"} id="about">
-          <Stack
-            as={Box}
-            textAlign={"center"}
-            spacing={{ base: 8, md: 14 }}
-            pb={{ base: 20, md: 36 }}
-          >
-            <Stack align="center" direction="row" px={4}>
-              <HStack mx={4}>
-                <Text color={`${color}.400`} fontWeight={800}>
-                  01
-                </Text>
-                <Text fontWeight={800}>About</Text>
-              </HStack>
-              <Divider orientation="horizontal" />
-            </Stack>
-            <Text color={"white.600"} fontSize={"xl"} px={4}>
-              {profile.about}
-            </Text>
-            <div
-            align={"right"}
-            alignself={"right"}
-            position={"relative"}>
-            <img
-              src="purin.png"
-              alt="pompompurin smiling"
-              width={250}
-              height={80}
-            />
-          </div>
+  return (
+    <>
+      <Container maxW={"3xl"} id="about">
+        <Stack
+          as={Box}
+          textAlign={"center"}
+          spacing={{ base: 8, md: 14 }}
+          pb={{ base: 20, md: 35 }}
+        >
+          <Stack align="center" direction="row" px={4}>
+            <HStack mx={4}>
+              <Text color={`${color}.400`} fontWeight={800}>
+                01
+              </Text>
+              <Text fontWeight={800}>About</Text>
+            </HStack>
+            <Divider orientation="horizontal" />
           </Stack>
-        </Container>
-      </>
-    );
+          <Text color={"white.600"} fontSize={"xl"} px={4}>
+            {profile.about}
+          </Text>
+          <Marquee pauseOnHover={true} speed={70}>
+            <div align={"right"} alignself={"right"} position={"relative"}>
+              <img
+                src="purin.png"
+                alt="pompompurin smiling"
+                width={250}
+              />
+            </div>
+          </Marquee>
+        </Stack>
+      </Container>
+    </>
+  );
 }
-
