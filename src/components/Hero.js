@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 import resume from "../resources/Ana_Tran_Resume.pdf";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Header({ color }) {
   const profile = ProfileArray();
@@ -43,8 +44,18 @@ export default function Header({ color }) {
             lineHeight={"110%"}
           >
             {profile.headerName} <br />
-            <Text as={"span"} color={`${color}.400`}>
+            {/* <Text as={"span"} color={`${color}.400`}>
               {profile.headerRole}
+            </Text> */}
+            <Text as={"span"} color={`${color}.400`}>
+              <TypeAnimation
+              sequence={[
+                'I build applications.',
+                1300,
+              ]}
+              speed={40}
+              repeat={Infinity}
+              />
             </Text>
           </Heading>
           <Text

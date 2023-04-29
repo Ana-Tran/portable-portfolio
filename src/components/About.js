@@ -40,7 +40,7 @@ export default function About({ color }) {
               alt="pompompurin smiling"
               width={250}
               height={80}
-            ></img>
+            />
           </div>
           </Stack>
         </Container>
