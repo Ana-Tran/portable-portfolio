@@ -13,7 +13,7 @@ const parseExperience = (mdContent) => {
         .substr(2)
         .split("|")
         .map((s) => s.trim());
-      const position = positionLine[0].slice(1, -1);
+      const position = positionLine[0].slice(0);
       const duration = positionLine[1].trim();
       const imageLine = lines[++i];
       const image = imageLine.match(/!\[(.*)\]\((.*)\)/)[2];
